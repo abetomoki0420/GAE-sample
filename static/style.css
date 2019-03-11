@@ -1,0 +1,51 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 600px;
+  margin: auto;
+}
+
+.container h1 {
+  border-bottom: 1px solid gray;
+}
+
+.access_buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.access_btn {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: red;
+  border-radius: 100%;
+  cursor: pointer;
+  background-image: linear-gradient(#335b71 45%, #03324c 55%);
+  box-shadow: 0 2px 2px #888888;
+  transition: color 0.3s, background-image 0.5s, ease-in-out;
+  user-select: none;
+}
+
+.access_btn:hover {
+  background-image: linear-gradient(#b1ccda 49%, #96b4c5 51%);
+  color: #03324c;
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.3;
+}
